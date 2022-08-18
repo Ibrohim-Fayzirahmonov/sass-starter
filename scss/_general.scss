@@ -1,9 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Space Mono', monospace;
 }
 
 ul,
@@ -22,12 +31,16 @@ option {
     margin: 0;
 }
 
-body{
 
+.container {
+    margin: 0 auto;
+    max-width: 1190px;
+    padding: 0 40px;
 }
 
-.container{
-    margin: 0 auto;
-    max-width: 1210px;
-    padding: 0 50px;
+@media screen and (max-width:767px) {
+    .container {
+        padding: 0 30px;
+    }
+
 }
